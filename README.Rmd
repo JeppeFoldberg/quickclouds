@@ -1,0 +1,30 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# quickclouds
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of quickclouds is to create wordclouds quickly and with easy iterations 
+between versions. 
+
+```{r example}
+library(quickclouds)
+# create_cloud("question_variable",
+#              "C:/path/to/Data",
+#              patterns=c("Udenlandsrejs\\w+|udlandsrejs\\w+" = "udenlandsrejse"))
+
+```
