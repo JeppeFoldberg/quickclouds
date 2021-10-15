@@ -13,5 +13,5 @@ iterations between versions.
 library(quickclouds)
 # create_cloud("question_variable",
 #              "C:/path/to/Data",
-#              patterns=c("Udenlandsrejs\\w+|udlandsrejs\\w+" = "udenlandsrejse"))
+#              patterns=c("regexexp" = "replacement"))
 ```
