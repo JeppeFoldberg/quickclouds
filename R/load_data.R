@@ -24,7 +24,5 @@ load_data <- function(text_col, path) {
 #' @return character vector
 #' @export
 load_stopwords <- function() {
-  stop <- scan(file = "R/stopord.txt",
-               what = "character",
-               fileEncoding = "UTF8")
+  stop
 }
