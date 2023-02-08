@@ -25,7 +25,7 @@ count_words <- function(text_data,
                            remove_separators = TRUE,
                            split_hyphens = TRUE,
                            include_docvars = TRUE,
-                           padding = TRUE)
+                           padding = F)
 
   if (include_2gram) {
     tkns <- quanteda::tokens_ngrams(tkns, n=1:2, concatenator = " ")
@@ -40,7 +40,6 @@ count_words <- function(text_data,
   # https://www.r-bloggers.com/2019/08/no-visible-binding-for-global-variable/
   df <- dfm_question %>%
     quanteda::convert(to = "data.frame") %>%
-    dplyr::select(-c(.data$V1)) %>%
     tidyr::pivot_longer(!.data$doc_id,
                  names_to = "word",
                  values_to = "count") %>%
